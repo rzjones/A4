@@ -1,1 +1,105 @@
-text
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4 Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        h1, h2 {
+            margin: 10px 0;
+            text-align: center;
+        }
+        section {
+            background-color: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h3>Assignment 4 Report</h3>
+        <h1> Persuasive or Deceptive Visualization</h1> 
+        <hr>
+        <h4>Rubin Jones - rzjones@mit.edu</h4> 
+    </header>
+    <section>
+        <h2>The Dataset: Abortion Data by U.S. State from the Guttmacher Institute</h2>
+        <hr>
+        <p> "The Guttmacher Institute is a research and policy organization committed to advancing sexual and reproductive health and rights. They maintain a variety of global data related to global reproductive rights. This data set contains data about abortion rates, abortion providers, and abortion seekers, aggregated to the state level." from 11.C35/6.C35, Interactive Data Visualization and Society, Spring 2024.</p>
+        <p>Temp text</p> 
+        <h2> Data Sketches </h2>
+         <hr>
+           <h2>Proposition: Access to an abortion is evenly distributed across the United States</h2>
+        <p> How has the US population changed from 1900 to 2000 for males and females, and how have these trends correlated with age? </p>
+         <hr>
+        <body>
+            <div class="container">
+                 <h2>FOR the proposition</h2>
+                 <img 
+                    src="images/Sketch 1.jpg" 
+                        alt="temp" 
+                        width = 700/>
+              <h3>Design Decisions and Rationale</h3>
+                <p> This sketch visualizes the percent change in population size between age groups (by 10 year increments) for females in 1900 and 2000. To produce this visualization, I divided one age group's population by the preceding age group, and then multiplied the quotient by 100 to calculate a whole integer for a percent value. Using actual numbers from the dataset to demonstrate, I took the population at age 10 for females in 2000 (10,550) and divided it by the population of females at age 0 in 2000 (9750). This produced a percent change increase of nearly 10% (8%), which is visualized on the line chart by the solid line for the data point = age 10 females. I repeated this step sequentially for each age group: I divided the population of 20 year old females in 2000 (9750) by the population of 10 year old females in 2000 (10550), multiplying by 100. Since this difference is negative (-8%), the corresponding data point falls below the x-axis toward the negative percent change section of the y-axis near the -10% mark for age 20. I repeated these steps for each age group of females in 1900, visualizing the trend in percent change with a dashed line.</p>
+                <p> My rationale behind this sketch was primarily exploratory. That is, I wanted to understand how the population composition changed between age groups for females in 1900 and 2000. There were clear variations in the population sizes of each age group, but rather than charting these population totals in a simple bar chart, I wanted to focus on the changes happening *within* the population. Therefore, I visualized the percent change between each age group, visualizing the peaks and valleys of the female population in 1900 and 2000.</p>
+                <p> I hoped this visualization would illuminate segments of the female population that experienced the most significant changes over a lifetime. In other words, I wanted to visualize how the female population has either grown older, younger, or stayed the same relative to age in 1900 versus 2000. I think juxtaposing both years on a single chart works well, as it shows how the population experiences more stable change between age groups in 2000 compared to 1900 (i.e. there is less steady population decline from age group to age group). That said, I do not think this visualization accurately accounts for historical moments or the context at the time. For example, medical advancements, and how they might have affected different age groups, are not annotated on the chart. This additional historical context would have situated and explained some of the differences shown between 1900 and 2000, as well as the changes between age groups.</p>
+                    <hr>
+                <h2>AGAINST the proposition</h2>
+                <img 
+                    src="images/Sketch 2.jpg" 
+                        alt="temp" 
+                        width = 700/>
+               <h3>Design Decisions and Rationale</h3>
+               <p> This sketch visualizes the percent change in population size between age groups (by 10 age increments) for males in 1900 and 2000. The calculation performed here is the same as the previous visualization: I divided one age group's population by the preceding age group, and then multiplied the quotient by 100 to calculate a whole integer for a percent value. I repeated this step sequentially for each age group for males in 1900, visualizing the trend in percent change with a dashed line. This was also done for each age group of males in 2000 with a solid trend line.</p>
+               <p> Similar to my rationale for the percent change by age group for females, my thinking behind this sketch was primarily exploratory. From a cursory look at the data, it appeared as though there were significant variations within the population by age group, so I created another visualiztion that tackled the question: "how has the population changed for males from 1900 to 2000, and how has this change over time correlated to age?". To capture the variability within each year's popualtion by age, I concentrated my attention on age groups, visualizing how the male population grew and shrank from one age group to another—providing some visual takeaways regarding US male life expectancy in 1900 and 2000.</p>
+               <p> Much like the first hand-drawn visualization for females, I hoped this visualization would illuminate the most significant changes in population size over a lifetime by age for males. Furthermore, I wanted to see how life expectancy and population age were similar and/or different between the two sexes. I think the duplicated format works well for this purpose, as it provides a comparable frame of analysis and thus easier platform to compare and contrast population change between age groups for males and females in 1900 and 2000. However, this line chart still does not provide any annotative explanation, which might help contextualize differential medical care, gender expectations, occupational position, or other gender-based variables between the sexes. Furthermore, much like the first visualization, I do not think this visualization illustrates the role of history in shaping population size and variability. That said, including historical annotations on this visualization (and the last) could potentially backfire; by  highlighting certain moments in time for each age group, it might extrapolate historical moments across an entire population of people, drawing correlations that could be over-generalized as causations. Not every age group or sex might has been affected equally by history, so these additional explanations may inadvertently lead to single-source answers to a sudden peak or valley in the population, which again could lead to misinterpretation of the data.</p> 
+                   <hr>
+                <p> The final hand-drawn visualization shows the popualation for males and females in 1900 and 2000. The organization of this visualization is very intentional: I wanted to overlay one year's population over the other—while keeping the sexes separate but adjacent for easy comparison—in order to show the immensity of the total population growth across almost every variable form 1900 to 2000. In other words, the superimposition of 1900 on top of 2000 allows the viewer to immediately see that the total population for males and females across every age group has increased—most notably for 30 and 40-year olds. Rather than using different colors to represent the two different years, I chose textured areas instead with different circle styles. Using two different colors for 1900 and 2000 might have created a visual division that would have separated the additive relationship I hoped to express here, since both years begin at 0, rather than ending or beginning where their areas' borders converge.</p>
+                <p> I mainly hoped to show how the population spread across age has not only grown up in total amount (i.e. the total number of people has increased), but that the spread itself has grown more substantial. As shown by the chart, the proportion of the population that is younger in 2000 is significantly less than that of 1900. In fact, the data seem to suggest that the population for both sexes has gotten older, and that the median age for each sex has shifted farther into adulthood from 1900 to 2000. So, in this way, I think this visualization does a good job of doing just that: it expresses the change in population size for both sexes by age from 1900 to 2000. It also visualizes how this increase has affected age groups differently (i.e. the population increase did not map neatly onto the population composition in 1900).</p>
+                  <hr>
+                <p>I think these three visualizations work in concert to produce an interesting first look at the data, as they explore the main research question in divergent ways. The first two dual line charts look at how the population has changed for both sexes between 1900 and 2000 as a percent change between different age groups. I think these visualizations do a strong job of showing where the population change in between age groups is greatest—where the population grows, shrinks, or stays the same relative to age—from 1900 to 2000. And by focusing on percent change, rather than total population size, this graph withstands the immense population change between years. In other words, it focuses on proportional change and thus normalizes the population spike we see between 1900 and 2000. I think these two line charts are a bit weak, however, for their lack of historical context. I believe this missing element would have helped situate the trends shown above, but with that said, they still do an effective job of showing how 1900 and 2000 share commonalities and differences with respect to population change by age and sex. The third graph follows a different structure from the first two, as it focuses on the total population instead of percent change. It also flips the age variable by 90 degrees, so that it becomes a vertical x axis. Years are labeled as shaded areas, and the sexes are organized on either side of the vertical x-axis. The visual organization of the data stands in stark contrast to a standard side-by-side bar chart. Additionally, by using texture as the visual syntax for the data, as opposed to color, the third sketch does a strong job of preserving the close relationship between the data and years, while also distinguishing them as two separate variables. However, much like the previous two charts, the third sketch omits contextual annotations that could have situated the data in time and place. I also think this visualization is somewhat ambitious. By condensing every measure and dimension within a single visualization, the graph could come across as too busy or confusing—especially for those who would prefer a simple chart. Furthermore, by using an unconventional styling technique via dots, there could be a brief moment of confusion as to what the dots signify, compared to other symbologies with more recognizable associations, like larger circles or higher bars as “greater than” or “different from.” I like the focus of the first two visualizations more than the third, as they concentrate on changes within the data as proportional values rather than absolute differences. By calculating the data into percentages, these two charts normalize the total population between 1900 and 2000, and thus provides a more effective set of data points to compare. I also think the focus on proportions rather than totals shows a compelling story, as it illustrates how the population has evolved in varying directions from 1900 and 2000; in short, it avoids reductive generalizations that “all age groups for both sexes saw a population increase from 1900 to 2000”. Taking that as my direction for my final design, I would like to see how these variables can be brought together in a single visualization like the third.</p>
+            </div>
+        </body>
+        <hr>
+        <h2> Final Reflection </h2>
+         <hr>
+        <body>
+            <div class="container">
+                <p> For the final design, I wanted to produce a visualization that avoided convention and bias in answering its primary research question: how has the population changed across age groups from males and females between 1900 and 2000? As alluded to in the previous section, I chose to focus on proportional differences between age groups for each sex, rather than total values, so that the population increase from 1900 to 2000 would not distort the reader’s interpretation of the data or the readability of the visualization; however, I took this analysis a step farther from the percent difference graphs calculated in the first phase. For the final design, I calculated the population of each age group’s population as a proportion of the total population, against year (1900 vs 2000) and sex (female and male). This produced four sets of proportions: 1900 females by age, 1900 males by age, 2000 females by age, and 2000 males by age. I then subtracted the set of proportions for the year 2000 by those for 1900 (e.g. 2000 females by age – 1900 females by age). The intention behind this calculation was to show how the spread of the population across age changed from 1900 to 2000. In other words, it visualizes segments of the population that increased or decreased as a proportion of the total population over the century. For example, children made up a much larger segment of the total population in 1900 than 2000, even though the total population of children grew from 1900 to 2000. This subtle trend in the data would have been lost in a general bar chart, but this visualization represents that difference as a negative percent difference bar, extending below the x-axis into the negative section of the y-axis. And by using sex as one of the dimensions in the chart, the visualization also shows how these differences varied for males and females. </p>
+                <p> With respect to my design rationale, I wanted to produce a visualization that went beyond a simple bar chart illustrating total population growth from 1900 to 2000 by sex and age; however, I still wanted to combine all measures and dimensions in a single visualization as clearly as possible. Formatting the percent difference as the y-axis allowed the bars to surface above the x-axis as positive values or plummet below the x-axis as negative values, emphasizing the aging of the population from 1900 to 2000. I also wanted to avoid design conventions and symbologies that reify the gender and sex binary; this meant choosing colors and shapes that worked against the Pink-Blue binary, as well as the light- and dark-hued binary of a single color, which can sometimes ascribe more value to darker colors and less value to lighter colors. Therefore, the choice to use yellow and brown was an intentional design decision—one aimed at producing an unbiased comparison between males and females. I also intentionally organized the sex labels with “Female” first and “Male” second, recognizing that the typical order places females, women, and other non-male identifying peoples secondary to men. </p>
+                <p> While the third sketch from the first phase managed to combine all of the variables into a single visualization, it relied on unconventional design techniques and stylistic choices that might elude the everyday reader. To avoid this potential confusion in my final design, I chose bars with varying lengths to symbolize the percent difference between 1900 and 2000 for each age group and sex. This division also allows the reader to discretize distinct data points easier and to see the individual changes over time, as opposed to an amorphous area chart. I believe this presents a more familiar visualization that a majority of readers can interpret. That said, my final design loses some visual impact by focusing on proportions instead of total values as its primary measure. The third sketch does a powerful job of visualizing the total population, as it uses area to symbolize population growth across all age groups and sexes. Furthermore, my final design might inadvertently minimize differences between males and females By focusing on the proportional difference between age groups by year, this visualization concentrates its attention on age as the primary dimension. The visual hierarchy of the graph reinforces this fact: Age is the top horizontal axis and Sex is the bottom horizontal axis. </p>
+                <p> That said, my final design draws upon many of the strengths of my first first three sketches: it normalizes differences in populatiton by calculating data into proportions, avoids biased associations between symbology and sex, and consolidates many dimensions and measures into a single visualizaiton—one with an approachable yet unconventional organization. As discussed in the sections above, my intitial sketches provided interesting design options, many of which informed my final design. It also steered me away from certain design choices. More specifically, my third sketch directed me toward a more readable, granular analysis that investigated the subtle differences within the data while preserving my answer to the overarching question.</p>
+        <hr>
+     </section>
+</body>
+</html>
